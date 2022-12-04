@@ -31,7 +31,8 @@
   }
 
   .navbar_logo p {
-    font-size: 1.1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
   }
 
   .navbar_links {

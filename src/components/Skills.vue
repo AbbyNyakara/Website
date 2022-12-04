@@ -6,6 +6,7 @@
         <div class="skills__card-years">{{skill.experience}}</div>
       </div>
     </div>
+    <img src="../assets/images/pattern-rings.svg" class="rings__skills" alt="">
   </div>
 </template>
 
@@ -92,7 +93,7 @@
     border-top: 2px solid grey;
     width: 80%;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
     height: 100vh;
   }
 
@@ -110,5 +111,12 @@
   .skills__cards::after {
     background: url(../assets/images/pattern-rings.svg);
     content: "";
+  }
+
+  .rings__skills {
+    position: absolute;
+    top: 75vh;
+    right: -40%;
+    z-index: 20;
   }
 </style>

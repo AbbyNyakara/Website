@@ -24,6 +24,7 @@
 
   h1 {
     font-size: 5rem;
+    background-color: transparent;
   }
 
   span {
