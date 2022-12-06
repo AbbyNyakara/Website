@@ -8,9 +8,9 @@
       </p>
     </div>
     <form action="" class="contact__form">
-      <input type="text" placeholder="NAME">
-      <input type="email" name="" id="" placeholder="EMAIL">
-      <textarea name="" id="" cols="30" rows="5" placeholder="MESSAGE"></textarea>
+      <input type="text" placeholder="NAME (REQUIRED)">
+      <input type="email" name="" id="" placeholder="EMAIL (REQUIRED)">
+      <textarea name="" id="" cols="30" rows="5" placeholder="MESSAGE (REQUIRED)"></textarea>
       <button class="send__button">SEND MESSAGE</button>
     </form>
   </div>
@@ -64,6 +64,7 @@
     color: #fff;
     padding-bottom: 1.2rem;
     font-size: 1.1rem;
+    resize: none;
   }
 
   .send__button {

@@ -71,14 +71,6 @@
             title: "CSS",
             experience: "1 Year Experience",
           },
-          {
-            title: "HTML",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "CSS",
-            experience: "1 Year Experience",
-          },
         ]
       }
     }
@@ -104,11 +96,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 4rem;
-  }
-
-  .skills__cards::after {
-    background: url(../assets/images/pattern-rings.svg);
-    content: "";
   }
 
   .rings__skills {
