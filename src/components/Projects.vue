@@ -133,7 +133,7 @@
   span.image__overlay {
     background: rgb(36, 36, 36, 0.5);
     width: 34rem;
-    height: 28rem;
+    height: 21rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -151,7 +151,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding-top: 30%;
+    padding-top: 20%;
   }
 
   .techs_used {
