@@ -9,10 +9,11 @@
       </div>
     </div>
     <div class="projects__cards">
-      <div class="project__card">
+      <div class="project__card" v-for="(project, index) in projects" :key="index">
         <div>
           <div class="project__img">
-            <img src="../assets/images/thumbnail1.webp" alt="">
+              <!-- Project image not working -->
+            <img :src="project.img" alt="">
             <span class="image__overlay">
               <div class="project__links">
                 <a href="" target="_blank">View Project</a>
@@ -24,44 +25,46 @@
         </div>
         
         <div class="project__details">
-          <h3>TODO WEB APP</h3>
-          <ul class="project__lang">
-            <li>Vue-JS</li>
-            <li>Vitest</li>
-            <li>CSS</li>
+          <h3>{{project.name}}</h3>
+          <ul class="project__lang" v-for="(tech, index) in projects.techs" :key="index"> 
+            <li>{{tech}}</li>
           </ul>
         </div>
       </div>
-      <div class="project__card">
-        <div>
-          <div class="project__img">
-            <img src="../assets/images/thumbnail1.webp" alt="">
-            <span class="image__overlay">
-              <div class="project__links">
-                <a href="" target="_blank">View Project</a>
-                <a href="" target="_blank">View Code</a>
-              </div>
-            </span>
-          </div>
-          
-        </div>
-        
-        <div class="project__details">
-          <h3>TODO WEB APP</h3>
-          <ul class="project__lang">
-            <li>Vue-JS</li>
-            <li>Vitest</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-      </div>
+      <!-- End -->
     </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: "Projects"
+    name: "Projects",
+    data() {
+      return {
+        projects: [
+          {
+            name: "Waymark Dental Website",
+            techs: ["React", "SEO", "SCSS"],
+            img: "../assets/images/thumbnail1.webp",
+            live: ""
+          },
+          {
+            name: "Space Traveller's Hub",
+            techs: ["React", "Redux", "Jest", "Conditional Rendering"],
+            img: "../assets/images/space.webp",
+            live: "",
+            code: ""
+          },
+          {
+            name: "Todo web App",
+            techs: ["VueJS", "Vitest", "CSS"],
+            img: "../assets/images/todo.webp",
+            live: "",
+            code: ""
+          },
+        ]
+      }
+    }
   }
 </script>
 
@@ -106,7 +109,7 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
-    /* object-fit: contain; */
+    object-fit: contain;
   }
 
   h3 {
