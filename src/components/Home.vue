@@ -1,13 +1,15 @@
 <template>
   <div class="home">
-    <img src="../assets/images/pattern-rings.svg" class="top__rings" alt="">
     <div class="home__body">
       <h1>Nice to meet you! <br> I'm <span>Abby Nyakara.</span></h1>
       <div class="intro_text">
         Based in Kenya, I'm a full-stack developer <br> passionate about building accesible applications <br> that meet the users' needs.
       </div> 
     </div>
-    <a href="">Contact Me</a>
+    <div class="home__contact">
+      <a href="">Contact Me</a>
+    </div>
+    
   </div>
 </template>
 
@@ -19,8 +21,9 @@
 
 <style scoped>
   .home {
-    position: relative;
+    min-height: 80vh;
   }
+
 
   h1 {
     font-size: 5rem;
@@ -37,20 +40,16 @@
     font-size: 1.1rem;
   }
 
-  .top__rings {
-    position: absolute;
-    top: 25px;
-    left: -20%;
+  .home__body {
+    padding-top: 4rem;
   }
 
-  .home__body {
-    position: absolute;
-    top: 80px;
+  .home__contact {
+    margin-top: 2rem;
   }
 
   a {
-    position: absolute;
-    top: 450px;
+    margin-top: 2rem;
     color: inherit;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -58,6 +57,4 @@
     border-bottom: 3px solid rgb(78, 225, 160);
     padding-bottom: 8px;
   }
-
-  
 </style>

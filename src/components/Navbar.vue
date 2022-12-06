@@ -28,6 +28,7 @@
     padding-top: 1.5rem;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1.2rem;
   }
 
   .navbar_logo p {
@@ -38,6 +39,10 @@
   .navbar_links {
     display: flex;
     gap: 1rem;
+  }
+
+  .navbar_links img:hover {
+    fill: rgb(78, 225, 160);
   }
 
 </style>

@@ -6,7 +6,6 @@
         <div class="skills__card-years">{{skill.experience}}</div>
       </div>
     </div>
-    <img src="../assets/images/pattern-rings.svg" class="rings__skills" alt="">
   </div>
 </template>
 
@@ -88,13 +87,12 @@
 
 <style scoped>
   .skills {
-    position: absolute;
-    top: 100vh;
+    margin-top: 4rem;
     border-top: 2px solid grey;
-    width: 80%;
-    padding-top: 3rem;
+    width: 100%;
     margin-bottom: 3rem;
     height: 100vh;
+    padding-top: 3rem;
   }
 
   .skills__card-title {

@@ -2,8 +2,8 @@
   <div class="contact">
     <div class="contact__description">
       <h2>Contact</h2>
-      <p>I would love to hear about your project and how <br> I 
-        can make it come alive! Please fill in the form and <br>
+      <p>I would love to hear about your project and how I 
+        can make it come alive! Please fill in the form and 
         i'll get back to you as soon as possible
       </p>
     </div>
@@ -24,8 +24,7 @@
 
 <style scoped>
   .contact {
-    position: relative;
-    top: 340vh; /*This will not work*/
+    margin-top: 7rem;
     display: flex;
     gap: 3rem;
     justify-content: space-between;
@@ -44,6 +43,7 @@
     line-height: 1.5;
     font-size: 1.1rem;
     padding-top: 1.2rem;
+    width: 80%;
   }
 
   .contact h2 {
@@ -59,7 +59,7 @@
   textarea {
     border: none;
     outline: none;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     border-bottom: 2px solid grey;
     color: #fff;
     padding-bottom: 1.2rem;

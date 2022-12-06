@@ -67,15 +67,11 @@
 
 <style scoped>
   .projects {
-    position: absolute;
-    top: 200vh;
     margin-top: 2rem;
-    width: 80%;
-    min-height: 100vh;
   }
 
   .projects__title {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
    a {
@@ -100,8 +96,6 @@
   }
 
   .project__img {
-    /* width: 550px;
-    height: 440px; */
     width: 34rem;
     height: 28.5rem;
     padding-bottom: 10px;

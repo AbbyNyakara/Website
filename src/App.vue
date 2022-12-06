@@ -5,7 +5,7 @@
     <Skills />
     <Projects />
     <Contact />
-    <Navbar class="bottom__nav" />
+    <Navbar />
   </div>
 </template>
 
@@ -23,7 +23,7 @@
       Home,
       Skills,
       Projects,
-      Contact
+      Contact,
     }
   }
 
@@ -34,12 +34,5 @@
     width: 80%;
     margin: auto;
     color: #fff;
-  }
-
-  .bottom__nav {
-    position: absolute;
-    top: 440vh;
-    display: flex;
-    justify-content: space-between;
   }
 </style>
