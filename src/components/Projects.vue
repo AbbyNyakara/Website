@@ -13,11 +13,12 @@
         <div>
           <div class="project__img">
               <!-- Project image not working -->
-            <img :src="project.img" alt="">
+            <img :src="`src/assets/images/${project.img}`" alt="">
             <span class="image__overlay">
               <div class="project__links">
-                <a href="" target="_blank">View Project</a>
-                <a href="" target="_blank">View Code</a>
+                <!-- Add the links here -->
+                <a :href="project.live" target="_blank">View Project</a>
+                <a :href="project.code" target="_blank">View Code</a>
               </div>
             </span>
           </div>
@@ -26,9 +27,12 @@
         
         <div class="project__details">
           <h3>{{project.name}}</h3>
-          <ul class="project__lang" v-for="(tech, index) in projects.techs" :key="index"> 
-            <li>{{tech}}</li>
-          </ul>
+          <div class="techs_used">
+            <ul class="project__lang" v-for="(tech, index) in project.techs" :key="index"> 
+              <li>{{tech}}</li>
+            </ul>
+          </div>
+          
         </div>
       </div>
       <!-- End -->
@@ -45,22 +49,22 @@
           {
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
-            img: "../assets/images/thumbnail1.webp",
-            live: ""
+            img: "waymark.webp",
+            live: "https://dental-website-qyzy3ec8p-abbynyakara.vercel.app/"
           },
           {
             name: "Space Traveller's Hub",
-            techs: ["React", "Redux", "Jest", "Conditional Rendering"],
-            img: "../assets/images/space.webp",
-            live: "",
-            code: ""
+            techs: ["React", "Redux", "Jest", "API"],
+            img: "space.webp",
+            live: "https://extraordinary-blini-9b9ffd.netlify.app/",
+            code: "https://github.com/AbbyNyakara/spaceship-project"
           },
           {
             name: "Todo web App",
             techs: ["VueJS", "Vitest", "CSS"],
-            img: "../assets/images/todo.webp",
-            live: "",
-            code: ""
+            img: "todo.webp",
+            live: "https://todo-list-vue-submission.vercel.app/",
+            code: "https://github.com/AbbyNyakara/TodoListVueSubmission"
           },
         ]
       }
@@ -100,8 +104,7 @@
 
   .project__img {
     width: 34rem;
-    height: 28.5rem;
-    padding-bottom: 10px;
+    height: 20.5rem;
     position: relative;
   }
 
@@ -109,7 +112,8 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
-    object-fit: contain;
+    object-fit: cover;
+    padding-bottom: 1rem;
   }
 
   h3 {
@@ -148,5 +152,10 @@
     align-items: center;
     gap: 2rem;
     padding-top: 30%;
+  }
+
+  .techs_used {
+    display: flex;
+    gap: 1rem;
   }
 </style>
