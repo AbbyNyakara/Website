@@ -13,7 +13,7 @@
         <div>
           <div class="project__img">
               <!-- Project image not working in deployment -->
-            <img :src="`src/assets/images/${project.img}`" alt="">
+            <img :src="project.img" alt="">
             <span class="image__overlay">
               <div class="project__links">
                 <!-- Add the links here -->
@@ -49,20 +49,20 @@
           {
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
-            img: "waymark.webp",
+            img: "src/assets/images/waymark.webp",
             live: "https://dental-website-qyzy3ec8p-abbynyakara.vercel.app/"
           },
           {
             name: "Space Traveller's Hub",
             techs: ["React", "Redux", "Jest", "API"],
-            img: "space.webp",
+            img: "src/assets/images/space.webp",
             live: "https://extraordinary-blini-9b9ffd.netlify.app/",
             code: "https://github.com/AbbyNyakara/spaceship-project"
           },
           {
             name: "Todo web App",
             techs: ["VueJS", "Vitest", "CSS"],
-            img: "todo.webp",
+            img: "src/assets/images/todo.webp",
             live: "https://todo-list-vue-submission.vercel.app/",
             code: "https://github.com/AbbyNyakara/TodoListVueSubmission"
           },
