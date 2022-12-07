@@ -12,7 +12,7 @@
       <div class="project__card" v-for="(project, index) in projects" :key="index">
         <div>
           <div class="project__img">
-              <!-- Project image not working -->
+              <!-- Project image not working in deployment -->
             <img :src="`src/assets/images/${project.img}`" alt="">
             <span class="image__overlay">
               <div class="project__links">
