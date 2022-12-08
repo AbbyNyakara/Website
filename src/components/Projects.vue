@@ -48,7 +48,7 @@
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
             img: "/waymark.webp",
-            live: "https://dental-website-qyzy3ec8p-abbynyakara.vercel.app/"
+            live: "https://dental-website.vercel.app/"
           },
           {
             name: "Space Traveller's Hub",
