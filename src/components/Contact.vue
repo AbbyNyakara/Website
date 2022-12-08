@@ -8,15 +8,17 @@
       </p>
     </div>
     <form action="" class="contact__form">
-      <input type="text" placeholder="NAME (REQUIRED)">
-      <input type="email" name="" id="" placeholder="EMAIL (REQUIRED)">
-      <textarea name="" id="" cols="30" rows="5" placeholder="MESSAGE (REQUIRED)"></textarea>
-      <button class="send__button">SEND MESSAGE</button>
+      <input v-model="text" name="name" placeholder="NAME" required>
+      <input v-model="email" name="email" placeholder="EMAIL" required>
+      <textarea v-model="message" name="message" required cols="30" rows="5" placeholder="MESSAGE"></textarea>
+      <button type="submit" class="send__button">SEND MESSAGE</button>
     </form>
   </div>
 </template>
 
 <script>
+  import emailjs from 'emailjs-com';
+
   export default {
     name: "Contact"
   }

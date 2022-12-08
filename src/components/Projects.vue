@@ -22,7 +22,6 @@
               </div>
             </span>
           </div>
-          
         </div>
         
         <div class="project__details">
@@ -32,7 +31,6 @@
               <li>{{tech}}</li>
             </ul>
           </div>
-          
         </div>
       </div>
       <!-- End -->
