@@ -49,20 +49,20 @@
           {
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
-            img: "src/assets/images/waymark.webp",
+            img: "/waymark.webp",
             live: "https://dental-website-qyzy3ec8p-abbynyakara.vercel.app/"
           },
           {
             name: "Space Traveller's Hub",
             techs: ["React", "Redux", "Jest", "API"],
-            img: "src/assets/images/space.webp",
+            img: "/space.webp",
             live: "https://extraordinary-blini-9b9ffd.netlify.app/",
             code: "https://github.com/AbbyNyakara/spaceship-project"
           },
           {
             name: "Todo web App",
             techs: ["VueJS", "Vitest", "CSS"],
-            img: "src/assets/images/todo.webp",
+            img: "/todo.webp",
             live: "https://todo-list-vue-submission.vercel.app/",
             code: "https://github.com/AbbyNyakara/TodoListVueSubmission"
           },
