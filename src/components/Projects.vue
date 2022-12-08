@@ -12,8 +12,8 @@
       <div class="project__card" v-for="(project, index) in projects" :key="index">
         <div>
           <div class="project__img">
-              <!-- Project image not working -->
-            <img :src="`src/assets/images/${project.img}`" alt="">
+              <!-- Project image not working in deployment -->
+            <img :src="project.img" alt="">
             <span class="image__overlay">
               <div class="project__links">
                 <!-- Add the links here -->
@@ -49,20 +49,20 @@
           {
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
-            img: "waymark.webp",
+            img: "/waymark.webp",
             live: "https://dental-website-qyzy3ec8p-abbynyakara.vercel.app/"
           },
           {
             name: "Space Traveller's Hub",
             techs: ["React", "Redux", "Jest", "API"],
-            img: "space.webp",
+            img: "/space.webp",
             live: "https://extraordinary-blini-9b9ffd.netlify.app/",
             code: "https://github.com/AbbyNyakara/spaceship-project"
           },
           {
             name: "Todo web App",
             techs: ["VueJS", "Vitest", "CSS"],
-            img: "todo.webp",
+            img: "/todo.webp",
             live: "https://todo-list-vue-submission.vercel.app/",
             code: "https://github.com/AbbyNyakara/TodoListVueSubmission"
           },
