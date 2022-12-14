@@ -7,11 +7,11 @@
         i'll get back to you as soon as possible
       </p>
     </div>
-    <form action="" class="contact__form">
+    <form action="" class="contact__form" @click="sendEmail()">
       <input v-model="text" name="name" placeholder="NAME" required>
       <input v-model="email" name="email" placeholder="EMAIL" required>
       <textarea v-model="message" name="message" required cols="30" rows="5" placeholder="MESSAGE"></textarea>
-      <button type="submit" class="send__button">SEND MESSAGE</button>
+      <button type="submit" class="send__button" value="send" >SEND MESSAGE</button>
     </form>
   </div>
 </template>
@@ -20,13 +20,39 @@
   import emailjs from 'emailjs-com';
 
   export default {
-    name: "Contact"
+    name: "Contact",
+    data() {
+      return {
+        name: '',
+        email: '',
+        message: ''
+      }
+    },
+    methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm('Abby2020#', 'template_jypst7o', e.target,
+        'fsohKjm6d5QCqbnm7', {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
+
+      } catch(error) {
+          console.log({error})
+      }
+      // Reset form field
+      this.name = ''
+      this.email = ''
+      this.message = ''
+    },
+    }
   }
 </script>
 
 <style scoped>
   .contact {
-    margin-top: 7rem;
+    margin-top: 5rem;
     display: flex;
     gap: 3rem;
     justify-content: space-between;
@@ -34,7 +60,7 @@
     min-height: 80vh;
     padding-bottom: 2rem;
     border-bottom: 2px solid #fff;
-    /* background-color: rgb(78, 76, 76) */
+    /* background-color: hsl(0, 0%, 14%); */
   }
 
   .contact__description {
@@ -82,5 +108,15 @@
   textarea::placeholder {
     color: rgb(78, 76, 76);
     font-size: 1.1rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .contact {
+      flex-direction: column;
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
+    }
   }
 </style>

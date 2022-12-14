@@ -156,4 +156,19 @@
     display: flex;
     gap: 1rem;
   }
+
+  @media only screen and (max-width: 600px) {
+    .projects__title {
+      font-size: 2rem;
+    }
+
+    .projects__cards {
+      grid-template-columns: 1fr;
+    }
+
+    .project__img {
+      width: 90vw;
+      height: 100%;
+    }
+  }
 </style>

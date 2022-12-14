@@ -57,4 +57,15 @@
     border-bottom: 3px solid rgb(78, 225, 160);
     padding-bottom: 8px;
   }
+
+  @media only screen and (max-width: 600px) {
+    .home {
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      
+    }
+  }
 </style>

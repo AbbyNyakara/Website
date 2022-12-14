@@ -83,7 +83,7 @@
     border-top: 2px solid grey;
     width: 100%;
     margin-bottom: 3rem;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 3rem;
   }
 
@@ -103,5 +103,26 @@
     top: 75vh;
     right: -40%;
     z-index: 20;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .skills {
+      margin-top: 0.5rem;
+    }
+
+    .skills__card-title {
+      font-size: 1.5rem;
+    }
+
+    .skills__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+     .skills__cards {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
   }
 </style>

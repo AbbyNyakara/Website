@@ -45,4 +45,14 @@
     fill: rgb(78, 225, 160);
   }
 
+  @media screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
 </style>
