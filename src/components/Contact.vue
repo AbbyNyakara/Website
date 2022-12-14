@@ -7,10 +7,10 @@
         i'll get back to you as soon as possible
       </p>
     </div>
-    <form action="" class="contact__form" @click="sendEmail()">
-      <input v-model="text" name="name" placeholder="NAME" required>
-      <input v-model="email" name="email" placeholder="EMAIL" required>
-      <textarea v-model="message" name="message" required cols="30" rows="5" placeholder="MESSAGE"></textarea>
+    <form ref="form" action="" class="contact__form" @submit.prevent="sendEmail()">
+      <input name="name" placeholder="NAME" required>
+      <input name="email" placeholder="EMAIL" required>
+      <textarea name="message" required cols="30" rows="5" placeholder="MESSAGE"></textarea>
       <button type="submit" class="send__button" value="send" >SEND MESSAGE</button>
     </form>
   </div>
@@ -29,23 +29,17 @@
       }
     },
     methods: {
-    sendEmail(e) {
-      try {
-        emailjs.sendForm('Abby2020#', 'template_jypst7o', e.target,
-        'fsohKjm6d5QCqbnm7', {
-          name: this.name,
-          email: this.email,
-          message: this.message
-        })
-
-      } catch(error) {
-          console.log({error})
-      }
-      // Reset form field
-      this.name = ''
-      this.email = ''
-      this.message = ''
-    },
+      sendEmail() {
+        emailjs.sendForm('Abby2020#', 'template_jypst7o', this.$refs.form , 'fsohKjm6d5QCqbnm7')
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
+        this.name = ''
+        this.email = ''
+        this.message = ''
+      },
     }
   }
 </script>
