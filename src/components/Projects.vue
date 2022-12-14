@@ -157,7 +157,7 @@
     gap: 1rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 960px) {
     .projects__title {
       font-size: 2rem;
     }
@@ -167,8 +167,17 @@
     }
 
     .project__img {
-      width: 90vw;
+      width: 100%;
       height: 100%;
+    }
+
+    span.image__overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none; /*toggle on click" */
     }
   }
 </style>

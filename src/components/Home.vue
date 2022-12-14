@@ -58,11 +58,11 @@
     padding-bottom: 8px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 960px) {
     .home {
       text-align: center;
     }
-    
+
     h1 {
       font-size: 2rem;
       

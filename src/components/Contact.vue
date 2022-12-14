@@ -110,13 +110,21 @@
     font-size: 1.1rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 960px) {
     .contact {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .contact h2 {
       font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .contact__description p {
+      text-align: center;
+      margin: auto;
     }
   }
 </style>

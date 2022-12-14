@@ -105,7 +105,7 @@
     z-index: 20;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 960px) {
     .skills {
       margin-top: 0.5rem;
     }
