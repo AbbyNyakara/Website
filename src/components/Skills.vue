@@ -1,9 +1,8 @@
 <template>
   <div class="skills">
     <div class="skills__cards">
-      <div class="skills__card" v-for="(skill, index) in skills" :key="index">
-        <div class="skills__card-title">{{skill.title}}</div>
-        <div class="skills__card-years">{{skill.experience}}</div>
+      <div id="skill__names">
+       ✧ HTML ✧ CSS ✧ JavaScript ✧ SASS ✧ ReactJS ✧ VueJS ✧ Redux ✧ SQL ✧ Ruby ✧ Ruby On Rails ✧ Jest ✧ Vitest ✧Python
       </div>
     </div>
   </div>
@@ -12,98 +11,31 @@
 <script>
   export default {
     name: "Skills",
-    data() {
-      return {
-        skills: [
-          {
-            title: "JavaScript",
-            experience: "2 Years Experience",
-          },
-          {
-            title: "SASS",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "React",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "Redux",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "Vue-JS",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "Ruby",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "Rails",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "Python",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "Accesibility",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "Jest & Vitest",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "PostgreSQL",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "MySQL",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "HTML",
-            experience: "1 Year Experience",
-          },
-          {
-            title: "CSS",
-            experience: "1 Year Experience",
-          },
-        ]
-      }
-    }
+    mounted () {
+      // const text = document.getElementById('skill__names');
+      // text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+      // const ele = document.querySelectorAll('span');
+      // for (let i=0; i<ele.length; i++) {
+      //   ele[i].style.transform="rotate("+i*360/ele.length+"deg)"
+      // }
+    } 
   }
+
 </script>
 
 <style scoped>
   .skills {
     margin-top: 4rem;
-    border-top: 2px solid grey;
     width: 100%;
     margin-bottom: 3rem;
-    min-height: 100vh;
     padding-top: 3rem;
   }
 
-  .skills__card-title {
-    font-weight: bolder;
-    font-size: 2.3rem;
-  }
-
-  .skills__cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 4rem;
-  }
-
-  .rings__skills {
+  span {
     position: absolute;
-    top: 75vh;
-    right: -40%;
-    z-index: 20;
+    transform-origin: 0 80px;
   }
+
 
   @media only screen and (max-width: 960px) {
     .skills {

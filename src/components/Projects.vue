@@ -72,7 +72,8 @@
 
 <style scoped>
   .projects {
-    margin-top: 2rem;
+    margin-top: 4rem;
+    border-top: 2px solid grey;
   }
 
   .projects__title {

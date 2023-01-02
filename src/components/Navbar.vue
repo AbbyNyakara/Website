@@ -25,10 +25,15 @@
 
 <style scoped>
   nav {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1.2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 8%);
+    z-index: 1000;
   }
 
   .navbar_logo p {
