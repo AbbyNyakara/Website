@@ -2,8 +2,8 @@
   <div class="app">
     <Navbar />
     <Home />
-    <Skills />
     <Projects />
+    <Skills />
     <Contact />
     <Navbar />
   </div>
@@ -21,18 +21,23 @@
     components: {
       Navbar,
       Home,
-      Skills,
       Projects,
+      Skills,
       Contact,
     }
   }
 
 </script>
 
-<style scoped>
+<style>
   .app {
-    width: 80%;
-    margin: auto;
     color: #fff;
+    width: 100%;
+    background-color: hsl(0, 0%, 8%);
+    padding: 50px;
+    /* Added the following */
+    position: absolute;
+    overflow: visible;
+    padding-top: 0;
   }
 </style>

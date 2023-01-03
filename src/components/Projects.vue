@@ -22,7 +22,6 @@
               </div>
             </span>
           </div>
-          
         </div>
         
         <div class="project__details">
@@ -32,7 +31,6 @@
               <li>{{tech}}</li>
             </ul>
           </div>
-          
         </div>
       </div>
       <!-- End -->
@@ -47,10 +45,17 @@
       return {
         projects: [
           {
+            name: "Doctor Appointment Booking App",
+            techs: ["Rails", "React", "SCSS"],
+            img: "/doctor.png",
+            live: "https://doc-appointments.netlify.app/",
+            code: "https://github.com/TracK92/doctor-appointment-front-end"
+          },
+          {
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
             img: "/waymark.webp",
-            live: "https://dental-website-qyzy3ec8p-abbynyakara.vercel.app/"
+            live: "https://dental-website.vercel.app/"
           },
           {
             name: "Space Traveller's Hub",
@@ -58,6 +63,13 @@
             img: "/space.webp",
             live: "https://extraordinary-blini-9b9ffd.netlify.app/",
             code: "https://github.com/AbbyNyakara/spaceship-project"
+          },
+          {
+            name: "Designo Website (in progress)",
+            techs: ["React", "SCSS", "Jest", "React Router"],
+            img: "/designo.png",
+            live: "https://designo-website-j0i38n5ek-abbynyakara.vercel.app/",
+            code: "https://github.com/AbbyNyakara/Designo-Website"
           },
           {
             name: "Todo web App",
@@ -74,7 +86,8 @@
 
 <style scoped>
   .projects {
-    margin-top: 2rem;
+    margin-top: 4rem;
+    border-top: 2px solid grey;
   }
 
   .projects__title {
@@ -157,5 +170,29 @@
   .techs_used {
     display: flex;
     gap: 1rem;
+  }
+
+  @media only screen and (max-width: 960px) {
+    .projects__title {
+      font-size: 2rem;
+    }
+
+    .projects__cards {
+      grid-template-columns: 1fr;
+    }
+
+    .project__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    span.image__overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none; /*toggle on click" */
+    }
   }
 </style>
