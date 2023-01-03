@@ -9,7 +9,6 @@
     <div class="home__contact">
       <a href="">Contact Me</a>
     </div>
-    
   </div>
 </template>
 
@@ -21,12 +20,11 @@
 
 <style scoped>
   .home {
-    min-height: 80vh;
+    min-height: 75vh;
   }
 
-
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     background-color: transparent;
   }
 
@@ -46,6 +44,7 @@
 
   .home__contact {
     margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   a {
@@ -56,5 +55,16 @@
     letter-spacing: 1.5px;
     border-bottom: 3px solid rgb(78, 225, 160);
     padding-bottom: 8px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    .home {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
   }
 </style>
