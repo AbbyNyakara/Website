@@ -45,6 +45,13 @@
       return {
         projects: [
           {
+            name: "Doctor Appointment Booking App",
+            techs: ["Rails", "React", "SCSS"],
+            img: "/doctor.png",
+            live: "https://doc-appointments.netlify.app/",
+            code: "https://github.com/TracK92/doctor-appointment-front-end"
+          },
+          {
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
             img: "/waymark.webp",
@@ -56,6 +63,13 @@
             img: "/space.webp",
             live: "https://extraordinary-blini-9b9ffd.netlify.app/",
             code: "https://github.com/AbbyNyakara/spaceship-project"
+          },
+          {
+            name: "Designo Website (in progress)",
+            techs: ["React", "SCSS", "Jest", "React Router"],
+            img: "/designo.png",
+            live: "https://designo-website-j0i38n5ek-abbynyakara.vercel.app/",
+            code: "https://github.com/AbbyNyakara/Designo-Website"
           },
           {
             name: "Todo web App",
