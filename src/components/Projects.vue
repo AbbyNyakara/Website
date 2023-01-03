@@ -55,7 +55,8 @@
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
             img: "/waymark.webp",
-            live: "https://dental-website.vercel.app/"
+            live: "https://dental-website.vercel.app/",
+            code: "https://github.com/AbbyNyakara/DentalWebsite"
           },
           {
             name: "Space Traveller's Hub",
@@ -68,7 +69,7 @@
             name: "Designo Website (in progress)",
             techs: ["React", "SCSS", "Jest", "React Router"],
             img: "/designo.png",
-            live: "https://designo-website-j0i38n5ek-abbynyakara.vercel.app/",
+            live: "https://designo-website-phi.vercel.app/",
             code: "https://github.com/AbbyNyakara/Designo-Website"
           },
           {
