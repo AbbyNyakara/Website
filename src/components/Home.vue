@@ -21,6 +21,7 @@
 <style scoped>
   .home {
     min-height: 75vh;
+    text-align: center;
   }
 
   h1 {
