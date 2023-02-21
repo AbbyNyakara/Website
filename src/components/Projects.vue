@@ -52,6 +52,12 @@
             code: "https://github.com/TracK92/doctor-appointment-front-end"
           },
           {
+            name: "Smile Essence Dental Website",
+            techs: ["React", "TailwindCSS"],
+            img: "/smile.png",
+            live: "https://smile-essence-dental.vercel.app/",
+          },
+          {
             name: "Waymark Dental Website",
             techs: ["React", "SEO", "SCSS"],
             img: "/waymark.webp",
@@ -66,7 +72,7 @@
             code: "https://github.com/AbbyNyakara/spaceship-project"
           },
           {
-            name: "Designo Website (in progress)",
+            name: "Designo Website",
             techs: ["React", "SCSS", "Jest", "React Router"],
             img: "/designo.png",
             live: "https://designo-website-phi.vercel.app/",
