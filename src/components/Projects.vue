@@ -55,7 +55,7 @@
             name: "Smile Essence Dental Website",
             techs: ["React", "TailwindCSS"],
             img: "/smile.png",
-            live: "https://smile-essence-dental.vercel.app/",
+            live: "https://smile-essence.vercel.app/",
           },
           {
             name: "Waymark Dental Website",
