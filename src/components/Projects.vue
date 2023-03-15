@@ -5,7 +5,7 @@
         <h2 class="projects__title"> Projects</h2>
       </div>
       <div>
-        <a href="#">Contact Me</a>
+        <a href="mailto:abbynyakara@gmail.com">Contact Me</a>
       </div>
     </div>
     <div class="projects__cards">
