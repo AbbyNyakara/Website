@@ -10,7 +10,7 @@
       <li><a href="https://www.frontendmentor.io/profile/AbbyNyakara" target="_blank">
         <img src="../assets/images/icon-frontend-mentor.svg" alt="">
       </a></li>
-      <li><a href="https://www.linkedin.com/in/abigail-nyakara/" target="_blank">
+      <li><a href="https://www.linkedin.com/in/abigael-nyakara/" target="_blank">
         <img src="../assets/images/icon-linkedin.svg" alt="">
       </a></li>
     </ul>

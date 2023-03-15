@@ -20,10 +20,10 @@
     name: 'App',
     components: {
       Navbar,
-      Home,
+      // Home,
       Projects,
-      Skills,
-      Contact,
+      // Skills,
+      // Contact,
     }
   }
 

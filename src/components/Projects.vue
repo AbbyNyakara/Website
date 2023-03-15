@@ -79,6 +79,13 @@
             code: "https://github.com/AbbyNyakara/Designo-Website"
           },
           {
+            name: "Countries Data(In progress)",
+            techs: ["React", "GraphQL", "APIs", "TailWindCSS", "ApolloClient"],
+            img: "/countries.png",
+            live: "https://countries-graph-ql.vercel.app/",
+            code: "https://github.com/AbbyNyakara/CountriesGraphQL"
+          },
+          {
             name: "Todo web App",
             techs: ["VueJS", "Vitest", "CSS"],
             img: "/todo.webp",
