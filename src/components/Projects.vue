@@ -44,13 +44,13 @@
     data() {
       return {
         projects: [
-          {
-            name: "Doctor Appointment Booking App",
-            techs: ["Rails", "React", "SCSS"],
-            img: "/doctor.png",
-            live: "https://doc-appointments.netlify.app/",
-            code: "https://github.com/TracK92/doctor-appointment-front-end"
-          },
+          // {
+          //   name: "Doctor Appointment Booking App",
+          //   techs: ["Rails", "React", "SCSS"],
+          //   img: "/doctor.png",
+          //   live: "https://doc-appointments.netlify.app/",
+          //   code: "https://github.com/TracK92/doctor-appointment-front-end"
+          // },
           {
             name: "Smile Essence Dental Website",
             techs: ["React", "TailwindCSS"],
